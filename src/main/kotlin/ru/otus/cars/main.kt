@@ -9,6 +9,8 @@ fun main() {
     garageMake()
     println("\n===> model special...")
     modelSpecial()
+    println("\n===> model make...")
+    modelMake()
 }
 
 fun driveCars() {
@@ -59,4 +61,13 @@ fun modelSpecial() {
             Taz -> println("Таз больше не ездит!")
         }
     }
+}
+
+fun modelMake() {
+    val vaz1 = Togliatti.buildCar(Vaz2107, Car.Plates("123", 77))
+    val vaz2 = Togliatti.buildCar(Vaz2108, Car.Plates("321", 78))
+
+    println("Создали машины:")
+    println(vaz1.toString()) // 2107
+    println(vaz2.toString()) // 2108
 }
